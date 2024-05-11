@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement d'images de cours de français</title>
+</head>
+<body>
+    <h1>Téléchargement d'images de cours de français</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Sélectionnez une image :</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        <label for="day">Jour de cours :</label><br>
+        <select id="day" name="day">
+            <option value="lundi">Lundi</option>
+            <option value="mardi">Mardi</option>
+            <option value="vendredi">Vendredi</option>
+        </select><br><br>
+        <input type="submit" value="Télécharger">
+    </form>
+</body>
+</html>
